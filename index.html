@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julliane's Website</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1 class="logo"><a href="index.html">Julliane ✦</a></h1>
+    <header class="navbar">
+        <h1 class="nav-logo"><a href="index.html">JULLIANE</a></h1>
 
-        <nav>
+        <nav class="nav-links">
             <ul>
                 <li><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
@@ -23,26 +32,32 @@
             </ul>
         </nav>
 
-        <div class="dark-mode"></div>
+        <button class="dark-toggle">
+            <i class="fa-solid fa-sun fa-xl"></i>
+        </button>
     </header>
 
     <main>
         <!-- Home Page -->
         <section id="home">
-            <p>✦ COMPUTER SCIENCE STUDENT</p>
+            <div class="wrapper">
+                <p>✦ COMPUTER SCIENCE STUDENT</p>
 
-            <h1>Hi, I'm <span class="pink-highlight">Julliane!</span> A future <span class="yellow-highlight">software
-                    developer</span></h1>
+                <h1>Hi, I'm <span class="pink-highlight">Julliane!</span> A future <span
+                        class="yellow-highlight">software
+                        developer</span></h1>
 
-            <p>Good afternoon! Building things for the web, one line of code at a time. Welcome to my little corner of
-                the internet!</p>
+                <p>Good afternoon! Building things for the web, one line of code at a time. Welcome to my little corner
+                    of
+                    the internet!</p>
 
-            <!-- PROFILE PIC -->
-            <div></div>
+                <!-- PROFILE PIC -->
+                <div></div>
 
-            <div>
-                <button>See My Work</button>
-                <button>Say Hello</button>
+                <div>
+                    <button>See My Work</button>
+                    <button>Say Hello</button>
+                </div>
             </div>
 
             <!-- Moving belt -->
@@ -259,7 +274,7 @@
 
     <footer>
         <div class="footer-layout">
-            <h1 class="logo-footer"><a href="index.html">Julliane ✦</a></h1>
+            <h1 class="footer-logo"><a href="index.html">Julliane ✦</a></h1>
 
             <div>
                 <div class="contanct-links">bernabejulliane@email.com</div>
