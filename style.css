@@ -55,7 +55,7 @@ img {
 	align-items: center;
 	padding: 1rem 3rem;
 	background-color: var(--bg);
-	border: solid 2px var(--border);
+	border-bottom: solid 1px var(--border);
 }
 
 .nav-logo a {
@@ -101,12 +101,120 @@ img {
 	color: #ffffff;
 }
 
-.wrapper {
+/* .wrapper {
 	max-inline-size: 1000px;
 	margin-inline: auto;
+} */
+
+/* HOME */
+.grid-bg {
+	background-image:
+		linear-gradient(var(--border) 1px, transparent 1px),
+		linear-gradient(90deg, var(--border) 1px, transparent 1px);
+	background-size: 48px 48px;
+
 }
 
-/* MAIN */
+.home-layout {
+	display: flex;
+	justify-content: space-between;
+	padding: 5.5rem 6rem;
+	align-items: center;
+	inline-size: 100%;
+}
+
+.home-left {
+	inline-size: 33rem;
+}
+
+.profile-pic {
+	inline-size: 18rem;
+	block-size: 18rem;
+	border: 5px solid var(--pink);
+}
+
+.home-badge {
+	display: inline-block;
+	background-color: var(--yellow-light);
+	color: #a07800;
+	padding: 0.5rem 1rem;
+	text-align: center;
+	font-size: 0.8rem;
+	font-weight: 800;
+	border-radius: var(--radius);
+	margin-bottom: 0.5rem;
+}
+
+.home-title {
+	font-size: 4rem;
+	font-family:
+		Playfair Display,
+		"Times New Roman",
+		Times,
+		serif;
+	font-weight: 800;
+	padding: 1rem 0rem;
+	line-height: 4.8rem;
+}
+
+.pink-highlight {
+	background-color: var(--pink);
+	color: white;
+	padding: 0 0.2em;
+}
+
+.yellow-highlight {
+	background-color: var(--yellow);
+	padding: 0 0.2em;
+}
+
+.home-subtext {
+	color: var(--text-muted);
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	margin-bottom: 1.5rem;
+}
+
+.home-button {
+	display: flex;
+	gap: 10px;
+}
+
+.btn {
+	display: inline-block;
+	border: 2px solid transparent;
+	padding: 15px 25px;
+	border-radius: var(--radius-pill);
+	font-size: 0.9rem;
+}
+
+.btn-dark {
+	border-color: var(--dark);
+	background-color: var(--dark);
+	color: white;
+	font-weight: 800;
+}
+
+.btn-dark:hover {
+	border-color: var(--pink);
+	background-color: var(--pink);
+}
+
+.btn-outline {
+	background-color: white;
+	border-color: var(--border);
+	color: var(--dark);
+	font-weight: 800;
+}
+
+.btn-outline:hover {
+	background-color: white;
+	border-color: var(--pink);
+	color: var(--pink);
+	font-weight: 800;
+}
+
+
 
 /* SECTION */
 
