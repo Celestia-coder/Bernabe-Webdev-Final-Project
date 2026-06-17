@@ -29,6 +29,8 @@
 	--radius: 16px;
 	--radius-sm: 8px;
 	--radius-pill: 50px;
+
+	--gap: 2rem;
 }
 
 body {
@@ -101,10 +103,10 @@ img {
 	color: #ffffff;
 }
 
-/* .wrapper {
+.wrapper {
 	max-inline-size: 1000px;
 	margin-inline: auto;
-} */
+}
 
 /* HOME */
 .grid-bg {
@@ -112,7 +114,6 @@ img {
 		linear-gradient(var(--border) 1px, transparent 1px),
 		linear-gradient(90deg, var(--border) 1px, transparent 1px);
 	background-size: 48px 48px;
-
 }
 
 .home-layout {
@@ -223,7 +224,7 @@ img {
 	color: white;
 	display: flex;
 
-	--gap: 2rem;
+	
 	gap: var(--gap);
 	padding: 0.8rem;
 	overflow: hidden;
@@ -237,6 +238,7 @@ img {
 	align-items: center;
 	justify-content: space-between;
 	min-inline-size: 100%;
+	user-select: none;
 
 	animation: ticker 120s linear infinite;
 }
@@ -254,6 +256,74 @@ img {
 	padding-inline: 1.5rem;
 }
 
-/* SECTION */
+/* ======== SECTION ========*/
+.section-label {
+	color: var(--pink);
+	font-size: 0.8rem;
+	font-weight: 800;
+	letter-spacing: 0.1rem;
+	padding-bottom: 1rem;
+}
+
+.section-title {
+	color: var(--dark);
+	font-family: Syne;
+	font-size: 2.7rem;
+	font-weight: 800;
+	letter-spacing: 0.1rem;
+	padding-bottom: 2rem;
+}
+
+/* ABOUT SECTION */
+.about-layout {
+	/* background-color: #fff6d6; */
+	padding-block: 5rem;
+}
+
+.about-card-layout {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 2rem;
+}
+
+.about-card {
+	border: 2px transparent solid;
+	border-radius: var(--radius);
+	padding: 2rem;
+	color: var(--text-muted);
+	line-height: 1.5rem;
+	font-size: 0.9rem;
+}
+
+.about-card ul {
+	margin-left: 1rem;
+}
+
+.about-title {
+	font-size: 1.3rem;
+	font-family: Syne;
+	color: var(--dark);
+	margin-bottom: 0.8rem;
+}
+
+.pink-card {
+	border-color: var(--pink);
+	background-color: var(--pink-light);
+}
+
+.blue-card {
+	border-color: var(--blue);
+	background-color: var(--blue-light);
+}
+
+.yellow-card {
+	border-color: var(--yellow);
+	background-color: var(--yellow-light);
+}
+
+.green-card {
+	border-color: var(--green);
+	background-color: var(--green-light);
+}
 
 /* FOOTER */
