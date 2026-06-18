@@ -15,6 +15,7 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="script.js" defer></script> 
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -141,98 +142,98 @@
 
         <!-- Skills -->
         <section id="skills">
-            <div class="section-label">✦ WHAT I KNOW</div>
+            <div class="wrapper">
+                <div class="section-label">✦ WHAT I KNOW</div>
 
-            <h2 class="section-title">My Skills</h2>
+                <h2 class="section-title">My Skills</h2>
 
-            <div class="skill-layout">
-                <!-- TECH SKILLS -->
-                <div class="tech-skill">
-                    <h3 class="skill-title">Technical Skills</h3>
+                <div class="skill-layout">
+                    <!-- TECH SKILLS -->
+                    <div class="tech-skills">
+                        <h3 class="skill-title">Technical Skills</h3>
 
-                    <!-- HTML -->
-                    <div class="skill-item">
-                        <div>
-                            <p class="tech-label">HTML</p>
-                            <p class="percentage">85%</p>
+                        <!-- HTML -->
+                        <div class="skill-item">
+                            <div class="skill-label"><span>HTML</span><span>70%</span></div>
+                            <div class="progress-bar">
+                                <div class="bar-fill" data-width="70" style="background:#FF85A1;"></div>
+                            </div>
                         </div>
-                        <div class="progress-bar"></div>
+
+                        <!-- CSS -->
+                        <div class="skill-item">
+                            <div class="skill-label"><span>CSS</span><span>50%</span></div>
+                            <div class="progress-bar">
+                                <div class="bar-fill" data-width="50" style="background:#ffca3a;"></div>
+                            </div>
+                        </div>
+
+                        <!-- JS -->
+                        <div class="skill-item">
+                            <div class="skill-label"><span>JS</span><span>30%</span></div>
+                            <div class="progress-bar">
+                                <div class="bar-fill" data-width="30" style="background:#4d96ff;"></div>
+                            </div>
+                        </div>
+
+                        <!-- GIT & GITHUB -->
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Git & GitHub</span><span>40%</span></div>
+                            <div class="progress-bar">
+                                <div class="bar-fill" data-width="40" style="background:#6bcb77;"></div>
+                            </div>
+                        </div>
+
+                        <!-- C -->
+                        <div class="skill-item">
+                            <div class="skill-label"><span>C</span><span>50%</span></div>
+                            <div class="progress-bar">
+                                <div class="bar-fill" data-width="50" style="background:#FF85A1;"></div>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- CSS -->
-                    <div class="skill-item">
-                        <div>
-                            <p class="tech-label">CSS</p>
-                            <p class="percentage">60%</p>
-                        </div>
-                        <div class="progress-bar"></div>
+                    <!-- SOFT SKILLS -->
+                    <div class="soft-skills">
+                        <h3 class="skill-title">Soft Skills</h3>
+
+                        <table class="skill-table">
+                            <thead>
+                                <tr>
+                                    <th>SKILL</th>
+                                    <th>LEVEL</th>
+                                    <th>NOTES</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Leadership</td>
+                                    <td><span class="badge badge-pink">Strong</span></td>
+                                    <td>Leads and manages groups</td>
+                                </tr>
+                                <tr>
+                                    <td>Communication</td>
+                                    <td><span class="badge badge-pink">Strong</span></td>
+                                    <td>Collaborative & articulate</td>
+                                </tr>
+                                <tr>
+                                    <td>Problem Solving</td>
+                                    <td><span class="badge badge-green">Good</span></td>
+                                    <td>Love providing solutions to problems</td>
+                                </tr>
+                                <tr>
+                                    <td>Time Management</td>
+                                    <td><span class="badge badge-yellow">Improving</span></td>
+                                    <td>Working on it daily</td>
+                                </tr>
+                                <tr>
+                                    <td>Creativity</td>
+                                    <td><span class="badge badge-green">Good</span></td>
+                                    <td>Love to think outside of the box</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-
-                    <!-- JS -->
-                    <div class="skill-item">
-                        <div>
-                            <p class="tech-label">Javascript</p>
-                            <p class="percentage">40%</p>
-                        </div>
-                        <div class="progress-bar"></div>
-                    </div>
-
-                    <!-- GIT & GITHUB -->
-                    <div class="skill-item">
-                        <div>
-                            <p class="tech-label">Git & GitHub</p>
-                            <p class="percentage">60%</p>
-                        </div>
-                        <div class="progress-bar"></div>
-                    </div>
-
-                    <!-- C -->
-                    <div class="skill-item">
-                        <div>
-                            <p class="tech-label">C</p>
-                            <p class="percentage">85%</p>
-                        </div>
-                        <div class="progress-bar"></div>
-                    </div>
-                </div>
-
-                <!-- SOFT SKILLS -->
-                <div class="soft-skills">
-                    <h3 class="skill-title">Soft Skills</h3>
-
-                    <table>
-                        <tr>
-                            <th>SKILL</th>
-                            <th>LEVEL</th>
-                            <th>NOTES</th>
-                        </tr>
-
-                        <tr>
-                            <th>Communication</th>
-                            <th>Strong</th>
-                            <th>Collaborative & articulate</th>
-                        </tr>
-                        <tr>
-                            <th>Problem Solving</th>
-                            <th>Strong</th>
-                            <th>Love debugging challenges</th>
-                        </tr>
-                        <tr>
-                            <th>Teamwork</th>
-                            <th>Strong</th>
-                            <th>Works well in groups</th>
-                        </tr>
-                        <tr>
-                            <th>Time Management</th>
-                            <th>Strong</th>
-                            <th>Working on it daily</th>
-                        </tr>
-                        <tr>
-                            <th>Creativity</th>
-                            <th>Strong</th>
-                            <th>Design & layout thinker</th>
-                        </tr>
-                    </table>
                 </div>
             </div>
         </section>

@@ -104,8 +104,10 @@ img {
 }
 
 .wrapper {
-	max-inline-size: 1000px;
+	max-inline-size: 100%;
 	margin-inline: auto;
+	padding: 5rem 7rem;
+	/* border: 2px solid red; */
 }
 
 /* HOME */
@@ -224,7 +226,6 @@ img {
 	color: white;
 	display: flex;
 
-	
 	gap: var(--gap);
 	padding: 0.8rem;
 	overflow: hidden;
@@ -257,6 +258,7 @@ img {
 }
 
 /* ======== SECTION ========*/
+
 .section-label {
 	color: var(--pink);
 	font-size: 0.8rem;
@@ -275,10 +277,6 @@ img {
 }
 
 /* ABOUT SECTION */
-.about-layout {
-	/* background-color: #fff6d6; */
-	padding-block: 5rem;
-}
 
 .about-card-layout {
 	display: grid;
@@ -324,6 +322,91 @@ img {
 .green-card {
 	border-color: var(--green);
 	background-color: var(--green-light);
+}
+
+/* SKILLS SECTION */
+#skills {
+	background-color: var(--bg-soft);
+}
+.skill-layout {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+}
+
+.skill-item {
+	margin-bottom: 1rem;
+}
+
+.skill-title {
+	font-family: Syne;
+	font-size: 1.3rem;
+	margin-bottom: 1.5rem;
+}
+
+.skill-label {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+
+.progress-bar {
+	background-color: var(--border);
+	border-radius: var(--radius);
+	height: 0.6rem;
+	overflow: hidden;
+}
+
+.bar-fill {
+	height: 100%;
+	border-radius: var(--radius);
+}
+
+.skill-table {
+	font-size: 0.8rem;
+	inline-size: 100%;
+	border-collapse: collapse;
+}
+
+.skill-table tr{
+	border-bottom: 1px solid var(--border);
+}
+
+.skill-table th {
+	color: var(--text-muted);
+	text-align: start;
+	padding: 0 1rem 0.5rem;
+	border-bottom: 2px solid var(--border);
+}
+
+.skill-table td {
+	padding: 1rem;
+	vertical-align: middle;
+}
+
+.badge {
+	padding: 0.3rem 0.6rem;
+	border-radius: var(--radius-pill);
+	font-weight: 800;
+}
+
+.badge-pink {
+	background: var(--pink-light);
+	color: #a0003d;
+}
+.badge-blue {
+	background: var(--blue-light);
+	color: #1a4fa0;
+}
+.badge-green {
+	background: var(--green-light);
+	color: #1a6b24;
+}
+.badge-yellow {
+	background: var(--yellow-light);
+	color: #7a5a00;
 }
 
 /* FOOTER */
