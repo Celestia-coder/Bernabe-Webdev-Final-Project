@@ -33,7 +33,7 @@
             </ul>
         </nav>
 
-        <button class="dark-toggle">
+        <button class="dark-toggle" id="darkToggle" aria-label="Toggle dark mode">
             <i class="fa-solid fa-sun fa-xl"></i>
         </button>
     </header>
@@ -50,7 +50,7 @@
                             </span> An aspiring <br> <span class="yellow-highlight">
                                 software developer</span></h1>
 
-                        <p class="home-subtext">Good afternoon! Building things for the web,
+                        <p class="home-subtext">Building things for the web,
                             one line of code at a time.
                             Welcome to my little corner of the internet!</p>
 
@@ -62,7 +62,7 @@
 
                     <!-- PROFILE PIC -->
                     <div class="profile-pic home-right">
-                        <img src="Images/profile.png" alt="Profile picture">
+                        <img src="Images/profile.jpg" alt="Profile picture">
                     </div>
                 </div>
 
@@ -323,7 +323,8 @@
 
                     <div class="form-group">
                         <label for="Message">Message</label>
-                        <textarea name="message" id="message" rows="5" placeholder="Hey! I'd love to connect with you." required></textarea>
+                        <textarea name="message" id="message" rows="5" placeholder="Hey! I'd love to connect with you."
+                            required></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-dark">Send Message</button>
@@ -334,17 +335,23 @@
     </main>
 
     <footer>
-        <div class="footer-layout">
-            <h1 class="footer-logo"><a href="index.html">Julliane ✦</a></h1>
+        <h1 class="footer-title">Let's Connect.</h1>
+        <p class="footer-subtitle">
+            Feel free to reach out for opportunities,
+            collaborations, or just to say hello.
+        </p>
 
-            <div>
-                <div class="contact-links">bernabejulliane@email.com</div>
-                <div class="contact-links">bernabejulliane@email.com</div>
-                <div class="contact-links">bernabejulliane@email.com</div>
-            </div>
+        <div class="footer-links">
+            <a href="mailto:bernabejulliane@email.com">bernabejulliane@email.com</a>
+            <a href="https://github.com/Celestia-coder">github.com/Celestia-coder</a>
+            <a href="https://www.linkedin.com/in/julliane-triselle-bernabe-963458296/">
+                linkedin.com/in/julliane-triselle-bernabe</a>
         </div>
 
-        <div>Made with love by Julliane Triselle Bernabe · CS Portfolio © 2026</div>
+        <div class="footer-bottom">
+            <p>Portfolio of Julliane Bernabe · © 2026</p>
+            <p>Built with HTML, CSS, JavaScript, and lots of coffee.</p>
+        </div>
     </footer>
 
 </body>

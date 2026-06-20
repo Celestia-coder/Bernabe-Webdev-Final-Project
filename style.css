@@ -33,6 +33,19 @@
 	--gap: 2rem;
 }
 
+body.dark {
+	--text: #f0f0f0;
+	--text-muted: #aaa;
+	--bg: #0f0f1a;
+	--bg-soft: #1a1a2e;
+	--border: rgba(255, 255, 255, 0.1);
+	--dark: #f0f0f0;
+}
+
+body.dark section {
+	background-color: #0f0f1a;
+}
+
 body {
 	font-family: "DM Sans", sans-serif;
 	color: var(--text);
@@ -87,7 +100,8 @@ img {
 	font-weight: 500;
 }
 
-.fa-sun {
+.fa-sun,
+.fa-moon {
 	/* color: #f6c822; */
 	color: var(--pink);
 }
@@ -100,7 +114,8 @@ img {
 }
 
 .dark-toggle:hover,
-.dark-toggle:hover .fa-sun {
+.dark-toggle:hover .fa-sun,
+.dark-toggle:hover .fa-moon {
 	background-color: var(--pink);
 	color: #ffffff;
 }
@@ -171,6 +186,7 @@ img {
 }
 
 .yellow-highlight {
+	color: #1a1a2e;
 	background-color: var(--yellow);
 	padding: 0 0.2em;
 }
@@ -188,6 +204,7 @@ img {
 }
 
 .btn {
+	background-color: var(--bg);
 	display: inline-block;
 	border: 2px solid transparent;
 	padding: 15px 25px;
@@ -207,15 +224,21 @@ img {
 	background-color: var(--pink);
 }
 
+body.dark .btn-dark {
+	background: var(--pink);
+	border-color: var(--pink);
+	color: #fff;
+}
+
 .btn-outline {
-	background-color: white;
+	/* background-color: white; */
 	border-color: var(--border);
 	color: var(--dark);
 	font-weight: 800;
 }
 
 .btn-outline:hover {
-	background-color: white;
+	/* background-color: var(--bg); */
 	border-color: var(--pink);
 	color: var(--pink);
 	font-weight: 800;
@@ -233,6 +256,10 @@ img {
 	gap: var(--gap);
 	padding: 0.8rem;
 	overflow: hidden;
+}
+
+body.dark .ticker {
+	background: var(--pink);
 }
 
 .ticker ul {
@@ -292,7 +319,7 @@ img {
 	border: 2px transparent solid;
 	border-radius: var(--radius);
 	padding: 2rem;
-	color: var(--text-muted);
+	color: #666;
 	line-height: 1.5rem;
 	font-size: 0.9rem;
 }
@@ -304,7 +331,7 @@ img {
 .about-title {
 	font-size: 1.3rem;
 	font-family: Syne;
-	color: var(--dark);
+	color: #0f0f1a;
 	margin-bottom: 0.8rem;
 }
 
@@ -517,6 +544,7 @@ img {
 
 .form-group input,
 .form-group textarea {
+	background: var(--bg);
 	color: var(--text);
 	resize: vertical;
 	font-family: "DM Sans", sans-serif;
@@ -539,6 +567,10 @@ footer {
 	color: #ffffff;
 	text-align: center;
 	padding: 5rem 2rem 3rem;
+}
+
+body.dark footer {
+	background: #0a0a14;
 }
 
 .footer-title {
