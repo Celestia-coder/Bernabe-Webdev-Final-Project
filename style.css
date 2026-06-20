@@ -40,6 +40,7 @@ body {
 
 a {
 	text-decoration: none;
+	/* color: var(--text); */
 }
 
 img {
@@ -280,7 +281,7 @@ img {
 
 .about-card-layout {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(4, 1fr);
 	gap: 2rem;
 }
 
@@ -370,7 +371,7 @@ img {
 	border-collapse: collapse;
 }
 
-.skill-table tr{
+.skill-table tr {
 	border-bottom: 1px solid var(--border);
 }
 
@@ -387,9 +388,12 @@ img {
 }
 
 .badge {
+	display: inline-block;
 	padding: 0.3rem 0.6rem;
 	border-radius: var(--radius-pill);
 	font-weight: 800;
+	font-size: 0.8rem;
+	text-align: center;
 }
 
 .badge-pink {
@@ -407,6 +411,54 @@ img {
 .badge-yellow {
 	background: var(--yellow-light);
 	color: #7a5a00;
+}
+
+/* PROJECT SECTION */
+
+.project-layout {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1.75rem;
+}
+
+.project-card {
+	border-radius: var(--radius);
+	border: 1.5px solid var(--border);
+	overflow: hidden;
+}
+
+.project-info {
+	padding: 1.5rem;
+}
+
+.project-img img {
+	width: 100%;
+	height: 170px;
+	object-fit: cover;
+}
+
+.project-title {
+	font-family: Syne;
+	margin: 0.7rem 0;
+}
+
+.project-title a {
+	color: var(--dark);
+}
+
+.project-title a:hover {
+	color: var(--pink);
+}
+
+.project-description,
+.project-role {
+	font-size: 0.85rem;
+	color: var(--text-muted);
+}
+
+.project-role {
+	font-weight: 800;
+	margin-bottom: 0.5rem;
 }
 
 /* FOOTER */
