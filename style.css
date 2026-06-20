@@ -61,7 +61,8 @@ img {
 	border-bottom: solid 1px var(--border);
 }
 
-.nav-logo a {
+.nav-logo a,
+.footer-logo a {
 	font-family: "Syne", sans-serif;
 	font-weight: 800;
 	font-size: 1.5rem;
@@ -135,6 +136,8 @@ img {
 	inline-size: 18rem;
 	block-size: 18rem;
 	border: 5px solid var(--pink);
+	border-radius: var(--radius-pill);
+	overflow: hidden;
 }
 
 .home-badge {
@@ -184,7 +187,7 @@ img {
 	gap: 10px;
 }
 
-.btn{
+.btn {
 	display: inline-block;
 	border: 2px solid transparent;
 	padding: 15px 25px;
@@ -199,7 +202,7 @@ img {
 	font-weight: 800;
 }
 
-.btn-dark:hover{
+.btn-dark:hover {
 	border-color: var(--pink);
 	background-color: var(--pink);
 }
@@ -512,7 +515,8 @@ img {
 	font-weight: 700;
 }
 
-.form-group input, .form-group textarea{
+.form-group input,
+.form-group textarea {
 	color: var(--text);
 	resize: vertical;
 	font-family: "DM Sans", sans-serif;
@@ -529,6 +533,51 @@ img {
 	border-color: var(--pink);
 }
 
-
-
 /* FOOTER */
+footer {
+	background: var(--dark);
+	color: #ffffff;
+	text-align: center;
+	padding: 5rem 2rem 3rem;
+}
+
+.footer-title {
+	font-size: 6rem;
+	font-weight: 800;
+	line-height: 1;
+	margin-bottom: 1rem;
+}
+
+.footer-subtitle {
+	max-width: 600px;
+	margin: 0 auto 2.5rem;
+	font-size: 1rem;
+	line-height: 1.7;
+	opacity: 0.75;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-bottom: 4rem;
+}
+
+.footer-links a {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 0.75rem 1.5rem;
+	border: 1px solid white;
+	border-radius: var(--radius-pill);
+}
+
+.footer-links a:hover {
+	background: var(--pink);
+	border-color: var(--pink);
+}
+
+.footer-bottom {
+	font-size: 0.9rem;
+	opacity: 0.6;
+}
