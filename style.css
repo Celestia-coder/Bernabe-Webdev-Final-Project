@@ -40,7 +40,7 @@ body {
 
 a {
 	text-decoration: none;
-	/* color: var(--text); */
+	color: var(--text);
 }
 
 img {
@@ -184,7 +184,7 @@ img {
 	gap: 10px;
 }
 
-.btn {
+.btn{
 	display: inline-block;
 	border: 2px solid transparent;
 	padding: 15px 25px;
@@ -199,7 +199,7 @@ img {
 	font-weight: 800;
 }
 
-.btn-dark:hover {
+.btn-dark:hover{
 	border-color: var(--pink);
 	background-color: var(--pink);
 }
@@ -460,5 +460,75 @@ img {
 	font-weight: 800;
 	margin-bottom: 0.5rem;
 }
+
+/* Contact Section */
+
+.contact-layout {
+	display: grid;
+	grid-template-columns: 1fr 1.4fr;
+	gap: 4rem;
+}
+
+.contact-info p {
+	margin-bottom: 1rem;
+}
+
+.contact-links {
+	display: block;
+	background-color: var(--bg-soft);
+	color: var(--text);
+	font-size: 1rem;
+	border: 1.5px solid var(--border);
+	border-radius: var(--radius-pill);
+	padding: 0.7rem 1.2rem;
+	text-align: center;
+	inline-size: fit-content;
+	margin-bottom: 0.7rem;
+}
+
+.contact-links:hover {
+	border-color: var(--pink);
+	color: var(--pink);
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	background-color: var(--bg-soft);
+	border: 1.5px solid var(--border);
+	border-radius: var(--radius);
+	padding: 2rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.form-group label {
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+.form-group input, .form-group textarea{
+	color: var(--text);
+	resize: vertical;
+	font-family: "DM Sans", sans-serif;
+	font-size: 1rem;
+	border: 1.5px solid var(--border);
+	border-radius: var(--radius-sm);
+
+	padding: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+	outline: none;
+	border-color: var(--pink);
+}
+
+
 
 /* FOOTER */
